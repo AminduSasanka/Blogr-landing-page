@@ -30,8 +30,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- github repo URL: [https://github.com/AminduSasanka/Blogr-landing-page](https://github.com/AminduSasanka/Blogr-landing-page)
+- Live Site URL: [https://blogr-by-amindu.netlify.app/](https://blogr-by-amindu.netlify.app/)
 
 ## My process
 
