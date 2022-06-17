@@ -1,0 +1,126 @@
+@import "media";
+
+nav {
+  padding: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  @include desktop {
+    justify-content: flex-start;
+  }
+
+  & .hamburger-menu {
+    @include desktop {
+      display: none;
+    }
+  }
+
+  .navlink-container {
+    display: none;
+    align-items: center;
+    width: 100%;
+    @include desktop {
+      display: flex;
+    }
+  }
+
+  //   navigation link list----------
+  ul {
+    display: flex;
+    list-style: none;
+    margin: 0 !important;
+    color: #fff;
+
+    li {
+      display: flex;
+      margin-inline: 2.5rem;
+      font-weight: bold;
+      color: rgba(255, 255, 255, 0.8);
+      cursor: pointer;
+      position: relative;
+
+      div:nth-child(1) {
+        display: flex;
+        align-items: center;
+        margin-left: 1rem;
+        & img {
+          transition: all 0.2s linear;
+        }
+        & img.active {
+          transform: rotate(180deg);
+        }
+      }
+      &:hover {
+        text-decoration: underline;
+        color: rgba(255, 255, 255, 1);
+      }
+    }
+  }
+
+  //   nav link dropdown---------------
+  .link-dropdown {
+    position: absolute;
+    left: 0;
+    top: 30px;
+    width: 130px;
+    height: 0;
+    padding-inline: 1rem;
+    overflow: hidden;
+    pointer-events: none;
+    border-radius: 5px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    transform: translateY(-10px);
+    transition: all 0.1s linear;
+    & a {
+      text-decoration: none;
+      text-transform: capitalize;
+      color: rgba(0, 0, 0, 0.8);
+      margin-bottom: 0.6rem;
+      font-weight: 400;
+      &:hover {
+        color: rgba(0, 0, 0, 1);
+        font-weight: 600;
+      }
+    }
+  }
+  .link-dropdown.active {
+    height: auto;
+    padding: 1rem;
+    pointer-events: all;
+    transform: translateY(10px);
+  }
+
+  .login-container {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    width: 100%;
+
+    & button {
+      padding: 0.8rem 2rem;
+      margin-inline: 0.5rem;
+      font-weight: bold;
+      border-radius: 30px;
+      cursor: pointer;
+    }
+    & button:nth-child(2) {
+      background-color: transparent;
+      color: #ffffffe5;
+      border: none;
+      &:hover {
+        color: #fff;
+      }
+    }
+    & button:nth-child(1) {
+      background-color: #fff;
+      border: none;
+      color: hsl(356, 100%, 66%);
+      &:hover {
+        background-color: hsl(355, 100%, 74%);
+        color: #ffffffe5;
+      }
+    }
+  }
+}

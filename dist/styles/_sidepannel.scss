@@ -1,0 +1,117 @@
+.sidepannel {
+  position: fixed;
+  top: 75px;
+  right: 20px;
+  left: 20px;
+  border-radius: 5px;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 2rem 1rem;
+  background-color: #fff;
+  z-index: 100;
+
+  & ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    width: 100%;
+    & li {
+      width: max-content;
+      margin-inline: auto;
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      align-items: center;
+      margin-bottom: 0.5rem;
+      font-weight: bold;
+      cursor: pointer;
+
+      div:nth-child(1) {
+        font-size: 1.3rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 0.3rem;
+        margin-bottom: 1rem;
+        h6 {
+          margin: 0;
+          font-size: 1.3rem;
+          text-transform: capitalize;
+          font-weight: bold;
+        }
+        img {
+          transition: all 0.2s linear;
+        }
+        img.active {
+          transform: rotate(180deg);
+        }
+      }
+    }
+  }
+
+  &-link-dropdown {
+    display: none;
+    flex-direction: column;
+    background-color: rgba(218, 212, 212, 0.3);
+    padding: 1rem;
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+
+    & a {
+      margin-bottom: 0.7rem;
+      text-decoration: none;
+      text-transform: capitalize;
+      color: rgba(0, 0, 0, 0.5);
+      font-size: 1.1rem;
+    }
+  }
+  &-link-dropdown.active {
+    display: flex;
+  }
+
+  & .hr {
+    height: 1px;
+    width: 100%;
+    background-color: rgba(218, 212, 212, 0.5);
+    margin: 0.8rem 0;
+  }
+
+  & .button-container {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 0.5rem;
+
+    & button {
+      padding: 0.5rem 2.5rem;
+      margin-inline: 0.5rem;
+      font-weight: bold;
+      font-size: 1.2rem;
+      border-radius: 30px;
+    }
+
+    & button:nth-child(1) {
+      background: linear-gradient(
+        to right,
+        hsl(13, 100%, 72%),
+        hsl(353, 100%, 62%)
+      );
+      border-color: transparent;
+      color: #fff;
+    }
+
+    & button:nth-child(2) {
+      background-color: transparent;
+      border: none;
+      text-transform: capitalize;
+      color: hsl(240, 10%, 16%);
+    }
+  }
+}
+
+.sidepannel.active {
+  display: flex;
+}

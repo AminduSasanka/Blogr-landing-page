@@ -1,0 +1,120 @@
+nav {
+  padding: 2rem 1.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background: linear-gradient(
+    to right,
+    hsl(13, 100%, 72%),
+    hsl(353, 100%, 62%)
+  );
+}
+
+@media screen and (min-width: 996px) {
+  nav {
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+  }
+}
+
+@media screen and (min-width: 996px) {
+  nav .hamburger-menu {
+    display: none;
+  }
+}
+
+nav .navlink-container {
+  display: none;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+}
+
+@media screen and (min-width: 996px) {
+  nav .navlink-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+}
+
+nav ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-inline: 2.5rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+nav ul li div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin-left: 1rem;
+}
+
+nav ul li:hover {
+  text-decoration: underline;
+}
+
+nav .login-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+  -ms-flex-direction: row-reverse;
+  flex-direction: row-reverse;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+}
+
+nav .login-container button {
+  padding: 0.8rem 2rem;
+  margin-inline: 0.5rem;
+  font-weight: bold;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+nav .login-container button:nth-child(2) {
+  background-color: transparent;
+  color: #fff;
+  border: none;
+}
+
+nav .login-container button:nth-child(2):hover {
+  background-color: #ff7a85;
+}
+
+nav .login-container button:nth-child(1) {
+  background-color: #fff;
+  border: none;
+  color: #ff525d;
+}
+
+nav .login-container button:nth-child(1):hover {
+  background-color: #ff7a85;
+  color: #fff;
+}

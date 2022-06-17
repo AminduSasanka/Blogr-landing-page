@@ -1,0 +1,335 @@
+@import "navbar";
+@import "sidepannel";
+@import "media";
+
+$font: Overpass, ubuntu, "sans-serif";
+$text-white: hsl(0, 0%, 100%);
+$text-light-red: hsl(356, 100%, 66%);
+$very-light-red: hsl(355, 100%, 74%);
+$Very-dark-grayish-blue: hsl(207, 13%, 34%);
+$Very-dark-black-blue: hsl(240, 10%, 16%);
+
+body {
+  font-family: $font;
+  margin: 0;
+  padding: 0;
+  color: $Very-dark-grayish-blue;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+// intro section container ========================================================================================
+//
+.intro-container {
+  background-image: url("../../images/bg-pattern-intro-mobile.svg"),
+    linear-gradient(to right, hsl(13, 100%, 72%), hsl(353, 100%, 62%));
+  background-position: 30% 50%;
+  background-repeat: no-repeat;
+  color: #fff;
+  border-bottom-left-radius: 90px;
+  padding-bottom: 3rem;
+  margin-bottom: 5rem;
+
+  @include desktop {
+    background-image: url("../../images/bg-pattern-intro-desktop.svg"),
+      linear-gradient(to right, hsl(13, 100%, 72%), hsl(353, 100%, 62%));
+    background-position: 24% 50%;
+  }
+
+  //intro section=====================================================
+  & .intro-inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 3rem 1.5rem;
+    margin: 6rem auto;
+
+    & > h1 {
+      font-size: 2.5rem;
+      letter-spacing: 1px;
+      font-family: sans-serif;
+      font-weight: bold;
+      margin-bottom: 1.3rem;
+      @include desktop {
+        font-size: 3.2rem;
+      }
+    }
+    & p {
+      font-family: sans-serif;
+      font-size: 1.4rem;
+      letter-spacing: 1px;
+      font-weight: lighter;
+      opacity: 0.8;
+      margin-bottom: 3rem;
+    }
+    & .button-container {
+      display: flex;
+      gap: 1.5rem;
+      justify-content: center;
+      & button {
+        border: none;
+        font-weight: bold;
+        color: $text-light-red;
+        padding: 0.8rem 1.5rem;
+        border-radius: 35px;
+        font-size: 1rem;
+      }
+      & button:nth-child(1) {
+        background-color: #fff;
+        &:hover {
+          background-color: $very-light-red;
+          color: $text-white;
+        }
+      }
+      & button:nth-child(2) {
+        background-color: transparent;
+        color: $text-white;
+        border: solid 1px $text-white;
+        &:hover {
+          background-color: $text-white;
+          color: $text-light-red;
+        }
+      }
+    }
+  }
+}
+
+// design for future section===================================================================
+.design-future-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 8rem auto;
+  margin-bottom: 16rem;
+  @include desktop {
+    margin: 5rem auto;
+  }
+
+  & h1 {
+    text-transform: capitalize;
+    text-align: center;
+    @include desktop {
+      margin-bottom: -3rem;
+    }
+  }
+}
+
+.future-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  @include desktop {
+    text-align: left;
+    flex-direction: row-reverse;
+    justify-content: center;
+    padding-left: 9%;
+  }
+
+  &-img img:nth-child(1) {
+    width: 100%;
+    height: auto;
+    @include desktop {
+      display: none;
+    }
+  }
+
+  &-img {
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    @include desktop {
+      width: 620px;
+      margin-bottom: 0;
+      margin-top: 0;
+    }
+
+    & img:nth-child(2) {
+      display: none;
+      height: 778px;
+      object-fit: cover;
+      object-position: left;
+      @include desktop {
+        display: block;
+      }
+    }
+  }
+
+  &-text {
+    padding-inline: 2.5rem;
+    & p {
+      opacity: 0.8;
+      margin-bottom: 2.5rem;
+      max-width: 650px;
+    }
+  }
+}
+
+// State of the art section =============================================
+.state-of-the-art {
+  background-image: url(../images/bg-pattern-circles.svg),
+    linear-gradient(to right, hsl(237, 17%, 21%), hsl(237, 23%, 32%));
+  background-position: 50% 125%;
+  background-repeat: no-repeat;
+  border-top-right-radius: 100px;
+  border-bottom-left-radius: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  @include desktop {
+    background-position: -57% 75%;
+  }
+}
+
+.art {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: $text-white;
+  text-align: center;
+  padding-bottom: 2.5rem;
+  @include desktop {
+    flex-direction: row;
+  }
+
+  &-img {
+    & img {
+      width: 100%;
+      height: auto;
+      margin-top: -230px;
+      max-width: 460px;
+      @include desktop {
+        max-width: unset;
+        margin-top: -56px;
+        margin-bottom: -128px;
+      }
+    }
+  }
+
+  &-text {
+    padding-inline: 2.5rem;
+    @include desktop {
+      text-align: left;
+    }
+    & h1 {
+      font-size: 2.2rem;
+    }
+    & p {
+      opacity: 0.8;
+      max-width: 650px;
+    }
+  }
+}
+
+// simple section=======================================================
+.simple-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 5rem auto;
+}
+
+.simple {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  @include desktop {
+    flex-direction: row;
+    justify-content: center;
+    padding-right: 9%;
+  }
+
+  &-img {
+    margin-bottom: 1.5rem;
+    @include desktop {
+      width: 590px;
+      margin-bottom: 0;
+    }
+    img {
+      width: 100%;
+      height: auto;
+      &:nth-child(1) {
+        display: block;
+        @include desktop {
+          display: none;
+        }
+      }
+      &:nth-child(2) {
+        display: none;
+        height: 700px;
+        object-fit: cover;
+        object-position: right;
+        @include desktop {
+          display: block;
+        }
+      }
+    }
+  }
+
+  &-text {
+    padding-inline: 2.5rem;
+    @include desktop {
+      text-align: left;
+    }
+    & p {
+      opacity: 0.8;
+      margin-bottom: 2.5rem;
+      max-width: 650px;
+    }
+  }
+}
+
+// footer section============================================
+footer {
+  background-color: $Very-dark-black-blue;
+  color: $text-white;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  border-top-right-radius: 100px;
+  @include desktop {
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: left;
+    padding: 4rem 3rem 1rem 3rem;
+  }
+
+  & .img-container {
+    margin: 3rem auto;
+    @include desktop {
+      margin: 0;
+    }
+  }
+
+  & .list-container {
+    margin-inline: 2.5rem;
+    & h5 {
+      opacity: 0.9;
+      @include desktop {
+        margin-bottom: 2rem;
+      }
+    }
+    & ul {
+      list-style: none;
+      padding: 0;
+      margin-bottom: 1.8rem;
+      & li {
+        text-transform: capitalize;
+        opacity: 0.8;
+        margin-bottom: 0.8rem;
+        font-size: 0.9rem;
+        text-decoration: none;
+        & a {
+          text-decoration: none;
+          color: $text-white;
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+}

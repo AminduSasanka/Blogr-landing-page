@@ -1,0 +1,283 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <!-- side pannel section -->
+    <section id="side_pannel" class="sidepannel shadow">
+      <ul>
+        <li>
+          <div id="sidepannel_link_product">
+            <h6>product</h6>
+            <div>
+              <img src="./images/icon-arrow-dark.svg" alt="" />
+            </div>
+          </div>
+          <div class="sidepannel-link-dropdown">
+            <a href="">Overview</a>
+            <a href="">Pricing</a>
+            <a href="">Marketplace</a>
+            <a href="">Features</a>
+            <a href="">Integrations</a>
+          </div>
+        </li>
+        <li>
+          <div id="sidepannel_link_company">
+            <h6>company</h6>
+            <div>
+              <img src="./images/icon-arrow-dark.svg" alt="" />
+            </div>
+          </div>
+          <div class="sidepannel-link-dropdown">
+            <a href="">about</a>
+            <a href="">team</a>
+            <a href="">blog</a>
+            <a href="">careers</a>
+          </div>
+        </li>
+        <li>
+          <div id="sidepannel_link_connect">
+            <h6>connect</h6>
+            <div>
+              <img src="./images/icon-arrow-dark.svg" alt="" />
+            </div>
+          </div>
+          <div class="sidepannel-link-dropdown">
+            <a href="">contact</a>
+            <a href="">newsletter</a>
+            <a href="">linkedIn</a>
+          </div>
+        </li>
+      </ul>
+      <div class="hr"></div>
+      <div class="button-container">
+        <button>Sign up</button>
+        <button>Log in</button>
+      </div>
+    </section>
+
+    <!-- intro -->
+    <section class="intro-container">
+      <!-- navigation bar -->
+      <nav>
+        <a href="#">
+          <img src="../images/logo.svg" alt="logo" class="logo-img" />
+        </a>
+        <!-- hamburger icon - hidden in bigger screens -->
+        <a href="#" id="toggle_button" class="hamburger-menu">
+          <img src="../images/icon-hamburger.svg" alt="menu" />
+        </a>
+        <!-- navigation links -->
+        <div class="navlink-container">
+          <ul>
+            <li id="navlink_product">
+              Product
+              <div>
+                <img src="./images/icon-arrow-light.svg" alt="" />
+              </div>
+              <div id="dropdown_product" class="link-dropdown shadow">
+                <a href="">Overview</a>
+                <a href="">Pricing</a>
+                <a href="">Marketplace</a>
+                <a href="">Features</a>
+                <a href="">Integrations</a>
+              </div>
+            </li>
+            <li id="navlink_company">
+              Company
+              <div>
+                <img src="./images/icon-arrow-light.svg" alt="" />
+              </div>
+              <div id="dropdown_company" class="link-dropdown shadow">
+                <a href="">about</a>
+                <a href="">team</a>
+                <a href="">blog</a>
+                <a href="">careers</a>
+              </div>
+            </li>
+            <li id="navlink_connect">
+              Connect
+              <div>
+                <img src="./images/icon-arrow-light.svg" alt="" />
+              </div>
+              <div id="dropdown_connect" class="link-dropdown shadow">
+                <a href="">contact</a>
+                <a href="">newsletter</a>
+                <a href="">linkedIn</a>
+              </div>
+            </li>
+          </ul>
+          <!-- login / signup -->
+          <div class="login-container">
+            <button>Sign up</button>
+            <button>Log in</button>
+          </div>
+        </div>
+      </nav>
+      <div class="intro-inner">
+        <h1>A modern publishing platform</h1>
+        <p>Grow your audiance and build your online brand</p>
+        <div class="button-container">
+          <button>Start for free</button>
+          <button>Learn more</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- design future section -->
+    <section class="design-future-container" data-aos="fade-right">
+      <h1>designed for the future</h1>
+      <div class="future-wrap">
+        <div class="future-wrap-img">
+          <img
+            data-aos="fade-up"
+            src="../images/illustration-editor-mobile.svg"
+            alt=""
+            class="img-fluid"
+          />
+          <img
+            data-aos="fade-up"
+            src="./images/illustration-editor-desktop.svg"
+            alt=""
+            class="img-fluid"
+          />
+        </div>
+        <div class="future-wrap-text">
+          <h2>Introducing an extensible editor</h2>
+          <p>
+            Blogr features an exceedingly intuitive interface which lets you
+            focus on one thing: creating content. The editor supports management
+            of multiple blogs and allows easy manipulation of embeds such as
+            images, videos, and Markdown. Extensibility with plugins and themes
+            provide easy ways to add functionality or change the looks of a
+            blog.
+          </p>
+          <h2>Robust content management</h2>
+          <p>
+            Flexible content management enables users to easily move through
+            posts. Increase the usability of your blog by adding customized
+            categories, sections, format, or flow. With this functionality,
+            you’re in full control.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- state of the art section -->
+    <section class="state-of-the-art">
+      <div class="art">
+        <div class="art-img">
+          <img
+            data-aos="fade-up"
+            src="./images/illustration-phones.svg"
+            alt=""
+            class="img-fluid"
+          />
+        </div>
+        <div data-aos="fade-up" class="art-text">
+          <h1>State of the Art Infrastructure</h1>
+          <p>
+            With reliability and speed in mind, worldwide data centers provide
+            the backbone for ultra-fast connectivity. This ensures your site
+            will load instantly, no matter where your readers are, keeping your
+            site competitive.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- free open simple section -->
+    <section data-aos="fade-left" class="simple-container">
+      <div class="simple">
+        <div class="simple-img">
+          <img
+            data-aos="fade-up"
+            src="./images/illustration-laptop-mobile.svg"
+            alt=""
+            class="img-fluid"
+          />
+          <img
+            data-aos="fade-up"
+            src="./images/illustration-laptop-desktop.svg"
+            alt=""
+            class="img-fluid"
+          />
+        </div>
+        <div class="simple-text">
+          <h2>Free, open, simple</h2>
+          <p>
+            Blogr is a free and open source application backed by a large
+            community of helpful developers. It supports features such as code
+            syntax highlighting, RSS feeds, social media integration,
+            third-party commenting tools, and works seamlessly with Google
+            Analytics. The architecture is clean and is relatively easy to
+            learn.
+          </p>
+          <h2>Powerful tooling</h2>
+          <p>
+            Batteries included. We built a simple and straightforward CLI tool
+            that makes customization and deployment a breeze, but capable of
+            producing even the most complicated sites.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="img-container">
+        <img src="./images/logo.svg" alt="" class="img-fluid" />
+      </div>
+      <div class="list-container">
+        <h5>Product</h5>
+        <ul>
+          <li><a href="">Overview</a></li>
+          <li><a href="">Pricing</a></li>
+          <li><a href="">Marketplace</a></li>
+          <li><a href="">Features</a></li>
+          <li><a href="">Integrations</a></li>
+        </ul>
+      </div>
+
+      <div class="list-container">
+        <h5>Compnay</h5>
+        <ul>
+          <li><a href="">about</a></li>
+          <li><a href="">team</a></li>
+          <li><a href="">blog</a></li>
+          <li><a href="">careers</a></li>
+        </ul>
+      </div>
+
+      <div class="list-container">
+        <h5>connect</h5>
+        <ul>
+          <li><a href="">contact</a></li>
+          <li><a href="">newsletter</a></li>
+          <li><a href="">linkedIn</a></li>
+        </ul>
+      </div>
+    </footer>
+
+    <script src="./index.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
